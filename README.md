@@ -3,7 +3,7 @@
 Addon renders a bars visualization of data. Designed to use as a filter
 
 # DEMO
-- [https://github.com/chauhansudhir/ember-cli-bar-view](https://github.com/chauhansudhir/ember-cli-bar-view).
+- [https://chauhansudhir.github.io/ember-cli-bar-view/](https://chauhansudhir.github.io/ember-cli-bar-view/).
 
 This README outlines the details of collaborating on this Ember addon.
 
