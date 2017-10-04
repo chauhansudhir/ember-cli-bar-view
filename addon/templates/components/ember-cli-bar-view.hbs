@@ -1,0 +1,14 @@
+{{yield}}
+<div class="ember-cli-bar-view-grid">
+{{#each data as |item|}}
+  {{-ember-cli-bar
+    data=data
+    item=item
+    labelKey=labelKey
+    valueKey=valueKey
+    barBgStyle=barBgStyle
+    maxValue=maxValue
+    clickAction=clickAction
+  }}
+{{/each}}
+</div>

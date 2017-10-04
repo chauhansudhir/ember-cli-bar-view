@@ -1,0 +1,1 @@
+export { default } from 'ember-cli-bar-view/components/-ember-cli-bar';

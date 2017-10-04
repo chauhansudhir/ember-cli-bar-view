@@ -1,0 +1,7 @@
+{{outlet}}
+{{#if clickedItem}}
+  Clicked Bar: {{clickedItem.label}}
+{{/if}}
+<div class="box-style">
+  {{ember-cli-bar-view data=model clickAction=(action 'clickAction')}}
+</div>
