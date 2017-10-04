@@ -1,4 +1,5 @@
 # ember-cli-bar-view
+[![Build Status](https://travis-ci.org/chauhansudhir/ember-cli-bar-view.svg?branch=master)](https://travis-ci.org/chauhansudhir/ember-cli-bar-view)
 
 Addon renders a bars visualization of data. Designed to use as a filter
 
