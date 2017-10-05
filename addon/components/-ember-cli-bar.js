@@ -16,11 +16,7 @@ export default Ember.Component.extend({
   barSize: computed('item', 'item.value', function() {
     let value = Number.parseInt(get(this, 'item.value')) || 0;
     let maxValue = this.get('maxValue');
-    if (maxValue > 1000) {
-      value = value / 100;
-    } else if (maxValue > 100) {
-      value = value / 10;
-    }
+    value = (value / maxValue) * 100;
     return `width: ${value}%`;
   }),
 
