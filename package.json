@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-bar-view",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "light weight bars/chart view presentation of data.",
   "keywords": [
     "ember-addon",
