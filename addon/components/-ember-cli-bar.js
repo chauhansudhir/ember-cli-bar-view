@@ -13,6 +13,10 @@ export default Ember.Component.extend({
   maxValue: 1,
   clickAction: null,
 
+  barBgStyles: computed('barBgStyle', function() {
+    return `${this.get('barBgStyle')} bar`;
+  }),
+
   barSize: computed('item', 'item.value', function() {
     let value = Number.parseInt(get(this, 'item.value')) || 0;
     let maxValue = this.get('maxValue');

@@ -1,14 +1,14 @@
 .ember-cli-bar-view-grid {
   > div.ember-cli-bar {
+    display: grid;
+    overflow: hidden;
     white-space: nowrap;
     margin: 2px 0;
     cursor: pointer;
-    > div {
-      display: inline-block;
-    }
+    grid-template-columns: auto 1fr auto;
   }
   .bar-label {
-    width: 100px;
+    width: 10%;
     text-align: right;
     padding-right: 10px;
   }
