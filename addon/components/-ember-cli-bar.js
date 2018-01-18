@@ -1,6 +1,6 @@
 import Ember from 'ember';
 import layout from '../templates/components/-ember-cli-bar';
-
+import { htmlSafe } from '@ember/string';
 const { computed, get } = Ember;
 
 export default Ember.Component.extend({
@@ -21,7 +21,7 @@ export default Ember.Component.extend({
     let value = Number.parseInt(get(this, 'item.value')) || 0;
     let maxValue = this.get('maxValue');
     value = (value / maxValue) * 100;
-    return `width: ${value}%`;
+    return htmlSafe(`width: ${value}%`);
   }),
 
   click() {
