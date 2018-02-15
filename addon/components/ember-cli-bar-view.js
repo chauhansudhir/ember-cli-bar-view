@@ -6,6 +6,7 @@ const { computed, defineProperty, get } = Ember;
 export default Ember.Component.extend({
   layout,
   data: null,
+  selectedRow: null,
   labelKey: 'label',
   valueKey: 'value',
   barBgStyle: 'ember-cli-bar-bg',

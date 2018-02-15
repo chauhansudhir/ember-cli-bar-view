@@ -7,6 +7,7 @@
     cursor: pointer;
     grid-template-columns: 100px 1fr;
   }
+
   .bar-label {
     width: 10%;
     text-align: right;
@@ -16,6 +17,12 @@
     margin-right: 5px;
     vertical-align: middle;
     overflow: visible;
+  }
+  .not-selected {
+    .ember-cli-bar-bg {
+      background: #E2E2E2;
+      color: #000000;
+    }
   }
   .ember-cli-bar-bg {
     background: #025196;
