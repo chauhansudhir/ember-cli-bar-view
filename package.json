@@ -44,6 +44,9 @@
     "node-sass": "^4.12.0",
     "sass": "^1.21.0"
   },
+  "engines": {
+    "node": "8.* || >= 10.*"
+  },
   "ember-addon": {
     "configPath": "tests/dummy/config"
   }
