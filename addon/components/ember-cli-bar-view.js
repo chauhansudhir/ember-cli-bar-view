@@ -5,14 +5,22 @@ const { computed, defineProperty, get } = Ember;
 
 export default Ember.Component.extend({
   layout,
+
   data: null,
+
   selectedRow: null,
+
   labelKey: 'label',
+
   valueKey: 'value',
+
   barBgStyle: 'ember-cli-bar-bg',
-  clickAction: null,
+
+  clickAction: () => {},
+
   init() {
     this._super(...arguments);
+
     defineProperty(this, 'maxValue', computed(`data.@each.${this.get('valueKey')}`, `${this.get('valueKey')}`, function() {
       let max = 0;
       let valKey = this.get('valueKey');
